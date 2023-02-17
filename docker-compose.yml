@@ -1,0 +1,7 @@
+services:
+  image-magick:
+    build: ./infra/
+    tty: true
+    volumes:
+      - ./resources:/var/resources
+    working_dir: /var/resources
